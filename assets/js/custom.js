@@ -6,6 +6,9 @@ jQuery(document).ready(function($) {
 	$('.toggle-first').click();
 	
 	$(".elementor-element-94ce6b9.header-clogo img").attr("src","https://aibc.sigmauat.xyz/wp-content/uploads/2021/08/AIBC-LOGO-01-300x105.png");
+	
+	$( "#aibc-uae-hotels .hotel-reviews .single-hotel" ).addClass( "full" );
+	$( "#aibc-uae-hotels .hotel-reviews .single-hotel .long" ).addClass( "open" );
 
 	$('.img-gallery').slickLightbox({
 		itemSelector        : 'img',
