@@ -597,18 +597,18 @@ body {
     justify-content: space-between;
     font-size: 18px;
     font-weight: 600;
-    background-color: #e21735;
+    background-color: #772d8e;
     color: #fff;
     margin: 0 0 20px 0;
     width: 100%;
 }
-.h-title a:hover,
+/*.h-title a:hover,
 .h-title a:focus,
 .h-title a:active {
 	background-color: #e21735 !important;
     color: #fff !important;
     text-decoration: none !important;
-}
+}*/
 .h-title a i {
     position: absolute;
     top: 11px;
@@ -800,7 +800,7 @@ body {
     -moz-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding: 20px 0 40px 0;
+    padding: 20px 0 0 0;
     position: relative;
 }
 .news-search {
@@ -1005,7 +1005,6 @@ body {
     color: #ed1a3b;
 }
 .news-search .search-form .search-field {
-    display: none;
     max-width: 245px;
     width: 100%;
     -webkit-transition-delay: 0s;
@@ -1015,7 +1014,7 @@ body {
     cursor: text;
     background-color: #fff;
     border: none;
-    border-bottom: solid 1px #ed1a3b;
+    border-bottom: solid 1px #772d8e;
     margin: 0;
     outline: none !important;
     /*position: absolute;*/
@@ -1047,12 +1046,6 @@ body {
 }
 .testimonial-slide-home .testimonial {
 	padding-top: 20px;
-}
-.testimonial-slide-home .testimonial img {
-	height: 120px;
-    width: 120px;
-    border-radius: 100%;
-    margin: 0 auto;
 }
 .peopl h3 {
 	font-size: 16px;
@@ -1117,8 +1110,8 @@ body {
 	transform: unset;
     top: 80px;
     z-index: 1;
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
     font-size: 0;
     line-height: 0;
     position: absolute;
@@ -1138,6 +1131,35 @@ body {
     right: 6%;
     left: unset;
 }
+.magazine-section .titlewrap {
+    background: #f1f1f1;
+    text-align: center;
+    padding: 8px 30px;
+    margin: 0;
+}
+.magazine-section .titlewrap h5 {
+    margin: 0;
+    padding: 0;
+    color: #000;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: .025em;
+    text-transform: capitalize;
+    font-family: 'Montserrat';
+}
+.magazine-section .titlewrap h6 {
+    margin: 0;
+    padding: 0;
+    color: #000;
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    letter-spacing: .025em;
+    font-family: 'Montserrat';
+}
 .testimonial-slide-home .slick-prev:before, 
 .testimonial-slide-home .slick-arrow.slick-next:before {
     font-size: 22px;
@@ -1151,6 +1173,7 @@ body {
     background-color: #ed1a3b;
     font-family: "Font Awesome 5 Free";
     display: block;
+	border-radius: 100%;
 }
 .testimonial-slide-home .slick-prev:before {
     content: '\f104';
@@ -1163,27 +1186,55 @@ body {
 
 /* Testimonial css end */
 /* Magezine slider css start */
-.magazine-section {
-    display: flex;
-    justify-content: space-between;
-}
-.sigma-magazines,
-.block-magazines {
-    width: 47%;
-}
 .magazine-section .testimonial-slide-home .testimonial {
     padding-top: 0;
-}
-.magazine-section .testimonial-slide-home .testimonial img {
-    height: 142px;
-    width: auto;
-    border-radius: 0;
-    margin: 0 auto;
+	margin-top: 0;
 }
 .magazine-section .testimonial-slide-home .slick-prev, 
 .magazine-section .testimonial-slide-home .slick-arrow.slick-next {
     top: unset;
     bottom: 10px;
+}
+.magazine-section .testimonial-slide-home {
+	    height: 340px;
+}
+.blog-listing-module .contribute-box {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 10px 20px 10px;
+    margin-top: 20px;
+}
+.blog-listing-module .contribute-box h2 {
+    font-size: 23px;
+    font-weight: 600;
+    color: #020202;
+}
+.blog-listing-module .contribute-box p {
+    font-size: 14px;
+    font-weight: 400;
+    color: gray;
+    margin-bottom: 10px;
+}
+.blog-listing-module .contribute-box .button1 a {
+    display: inline-block;
+    color: #fff;
+    font-weight: 400;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 16px 30px;
+    line-height: 1.2;
+    text-decoration: none !important;
+    border: none;
+    -webkit-transition: 0.3s all;
+    -o-transition: 0.3s all;
+    -moz-transition: 0.3s all;
+    transition: 0.3s all;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    background: #6fd13b;
 }
 /* Magezine slider css end */
 .autocomplete-suggestions .autocomplete-suggestion b {
@@ -1660,6 +1711,9 @@ body {
         max-width: 100% !important;
         width: calc(100% - 55%) !important;
     }
+	.magazine-section .testimonial-slide-home {
+		height: auto;
+	}
 }
 @media (max-width: 600px) {
 	.all-country.europe:before {

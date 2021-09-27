@@ -11,11 +11,12 @@
 
 get_header();
 $term = get_queried_object();
-$featured_image = get_field('featured', $term);
-$header_image = get_field('header', $term);
-$header_link = get_field('header_link', $term);
-$fallback_sidebars_left = '100427';
-$fallback_sidebars_right = '22586, 22578, 22549, 22583';
+$header_image = get_field('category_header', $term);
+$header_link = get_field('category_header_link', $term);
+$subheader_image = get_field('category_subheader', $term);
+$subheader_link = get_field('category_subheader_link', $term);
+$fallback_sidebars_left = '133187';
+$fallback_sidebars_right = '133189, 133184';
 $sidebars_left = get_field('left_sidebar', $term);
 $sidebars_right = get_field('right_sidebar', $term);
 $sidebars_left_final = !empty($sidebars_left) ? implode(', ', $sidebars_left) : $fallback_sidebars_left;
@@ -213,10 +214,10 @@ div.item--post:nth-child(2n+1) {
 
 <section>
 	<!-- News Banner start -->
-    <?php if ($featured_image) { ?>
+    <?php if ($header_image) { ?>
         <div class="blog-banner">
             <a href="<?php echo ($header_link != '' ? ($header_link . '" target="_blank"') : '#"'); ?>">
-                <img src="<?php echo $featured_image; ?>">
+                <img src="<?php echo $header_image; ?>">
             </a>
         </div>
     <?php } ?>
@@ -233,26 +234,31 @@ div.item--post:nth-child(2n+1) {
 
 			<!-- Middle Detail News start -->
 			<div class="blog-details">
-				<?php if ($header_image) { ?>
-					<img src="<?php echo $header_image; ?>" style="width: calc(100%-20px);"><br /><br />
+				<?php if ($subheader_image) { ?>
+					<a href="<?php echo ($subheader_link != '' ? ($subheader_link . '" target="_blank"') : '#"'); ?>">
+						<img src="<?php echo $subheader_image; ?>" style="width: calc(100%-20px);">
+            		</a><br /><br />
 				<?php } ?>
 				<div class="blog-inner-details">
-				<?php if ( have_posts() ) {
-					// The Loop
-					while ( have_posts() ) {
-						the_post(); ?>
-						<div class="item item--post">
-							<a class="more" href="<?php echo the_permalink(); ?>" style="background-image:url('<?php echo the_post_thumbnail_url(); ?>')" target="_blank">
-								<div class="post-desc">
-									<h2><?php echo the_title(); ?></h2>
-								</div>
-							</a>
-						</div>
-					<?php }
-				 
-				} else { ?>
-					<p><?php __('Sorry, no posts matched your criteria.', 'sigmaigaming'); ?></p>
-				<?php } ?>
+					<?php if ( have_posts() ) {
+						// The Loop
+						while ( have_posts() ) {
+							the_post(); ?>
+							<div class="item item--post">
+								<a class="more" href="<?php echo the_permalink(); ?>" style="background-image:url('<?php echo the_post_thumbnail_url(); ?>')" target="_blank">
+									<div class="post-desc">
+										<h2><?php echo the_title(); ?></h2>
+									</div>
+								</a>
+							</div>
+						<?php }
+					 
+					} /*else { ?>
+						<p><?php __('Sorry, no posts matched your criteria.', 'sigmaigaming'); ?></p>
+					<?php }*/ ?>
+				</div>
+				<div class="aibc-pagination">
+					<?php the_posts_pagination(); ?>
 				</div>
 			</div>
 			<!-- Middle Detail News end -->

@@ -35,7 +35,8 @@ if(isset($term_url) && !empty($term_url)) {
 		</a>
 	</div>
 	<!-- News Banner section start -->
-
+<?php var_dump('bbbbbbbb');
+die;?>
 	<!-- News Content section start -->
 	<div class="blog-content">
 		<div class="page-container">
@@ -58,6 +59,7 @@ if(isset($term_url) && !empty($term_url)) {
 					<!-- video -->
 				</div>
 			</div>
+
 			<div class="blog-details">
 				<div class="blog-listing-wrapper">
 					<?php if ( have_posts() ) {

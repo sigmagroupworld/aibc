@@ -26,13 +26,17 @@ html {
     -ms-text-size-adjust: 100%;
     overflow-x: hidden;
 }
-html, body, div, h1, h2, h3, h4, h5, h6, p, ul, li, form {
+:root{
+    --aibc : #5882f2;
+}
+html, body, div, h1, h2, h3, h4, h5, h6, p, ul, li form {
     margin: 0; 
     padding: 0; 
     list-style: none; 
     font-weight: normal;
 	font-family: "Montserrat";
 }
+
 button, input, select, textarea {
     margin: 0; 
     padding: 0; 
@@ -54,9 +58,12 @@ body {
     -webkit-font-smoothing: antialiased; 
     -moz-osx-font-smoothing: grayscale;
 }
+
 a {
+    /*color: #772d8e;*/
     text-decoration: none;
 }
+
 a:hover, 
 a:focus {
     text-decoration: none; 
@@ -87,9 +94,9 @@ a {
     -o-transition: all .5s ease-in-out 0s;
 }
 a:focus {
-    background: none;
+    /*background: none;*/
     outline: none !important;
-    color: inherit;
+    /*color: inherit;*/
     text-decoration: none;
 }
 .site a:focus:not(.wp-block-button__link):not(.wp-block-file__button) img {
@@ -111,6 +118,8 @@ a:focus {
 p:last-child {
     margin-bottom: 0;
 }
+
+
 /* Custom CSS End */
 
 /* Footer Styling */
@@ -871,8 +880,8 @@ div.wpforms-container-full.footer-newsletter .wpforms-form label.wpforms-error {
     font-weight: bold;
 }
 .sub-txts p a {
-    color: #ED1A3B;
-    font-weight: bold;
+    color: #772d8e;
+    font-weight: 500;
 }
 .sub-txts p a:hover {
     color: #000;
@@ -1128,9 +1137,9 @@ div.wpforms-container-full.footer-newsletter .wpforms-form label.wpforms-error {
     margin: 30px 0;
 }
 
-.testimonial-slide-home {
+/*.testimonial-slide-home {
     max-height: 400px;
-}
+}*/
 
 .broker-slide {
     max-height: 370px !important;
@@ -1241,7 +1250,7 @@ div.wpforms-container-full.footer-newsletter .wpforms-form label.wpforms-error {
     position: relative;
     width: 100%;
     margin: 0 auto 0 auto;
-    background: url(/wp-content/uploads/2021/06/Hosts-Background-1.jpg) no-repeat;
+    background: url(/wp-content/uploads/2021/09/Hosts-Background-1.jpg) no-repeat;
     background-size: cover;
     text-align: center;
     padding: 20px 0;
@@ -1260,7 +1269,7 @@ div.wpforms-container-full.footer-newsletter .wpforms-form label.wpforms-error {
     margin: 0 auto;
 }
 .person-avatar-img .person-btn {
-    background-color: #a48157;
+    background-color: #000000;
     right: -10px;
     cursor: pointer;
     bottom: -8px;
@@ -1354,7 +1363,7 @@ div.wpforms-container-full.footer-newsletter .wpforms-form label.wpforms-error {
     justify-content: flex-start;
 }
 .judge-box {
-    width: calc(25% - 2.5%);
+    width: calc(33% - 2.5%);
     margin: 2% 1.25% 2% 1.25% !important;
     box-shadow: 3px 3px 12px #7a7a7a;
 }
@@ -1772,7 +1781,7 @@ div.wpforms-container-full.footer-newsletter .wpforms-form label.wpforms-error {
     height: 100px;
 }
 .person-social p a {
-    color: #ed1a3b;
+    color: #772d8e;
     text-decoration: underline;
 }
 .person-social p a i {
@@ -1783,9 +1792,12 @@ div.wpforms-container-full.footer-newsletter .wpforms-form label.wpforms-error {
     display: inline-block;
     margin: 20px;
 }
+.elementor-9179 .elementor-element.elementor-element-dd05c41 div.hfe-nav-menu-icon {
+    color: var(--aibc);
+}
 .video-grid h3 {
     font-size: 14px;
-    color: #ed1a3b;
+    color: var(--aibc);
     font-weight: 600;
     font-family: "Montserrat", Sans-serif;
     line-height: 20px;
@@ -2547,7 +2559,7 @@ div.wpforms-container-full.footer-newsletter .wpforms-form label.wpforms-error {
     margin: 0;
 }
 .sigma-tv-page.elementor-heading-title {
-    color: #ED1A3B;
+    color: var(--aibc);
     font-family: "Montserrat", Sans-serif;
     font-size: 22px;
     font-weight: 600;
@@ -2864,11 +2876,11 @@ div.wpforms-container-full.footer-newsletter .wpforms-form label.wpforms-error {
     width: 0;
     height: 0;
     border-top: 37px solid transparent;
-    border-left: 22px solid #ed1a3b;
+    border-left: 22px solid #679af4;
     background: #dedede;
 }
 #gallery-page-tab .elementor-tabs .elementor-tabs-wrapper .elementor-tab-title.elementor-active {
-    background-color: #ed1a3b;
+    background-color: #679af4;
     color: #FFFFFF;
 }
 #gallery-page-tab .elementor-tabs .elementor-tabs-wrapper .elementor-tab-title:first-child {
@@ -2889,7 +2901,7 @@ div.wpforms-container-full.footer-newsletter .wpforms-form label.wpforms-error {
     width: 0;
     height: 0;
     border-bottom: 33px solid transparent;
-    border-right: 22px solid #ed1a3b;
+    border-right: 22px solid #679af4;
     background: #dedede;
     border-top: none;
     border-left: none;
@@ -3186,6 +3198,12 @@ body.call-speakers .call-for-speakers-db {
     max-height: 0;
     overflow: hidden;
 }
+
+.call-for-speakers-db .inner-wrapper p {
+    padding: 25px;
+    font-weight: 600;
+}
+
 .call-for-speakers-db .single-speaker {
     display: -webkit-box;
     display: -webkit-flex;
@@ -3233,6 +3251,7 @@ body.call-speakers .call-for-speakers-db {
 .call-for-speakers-db .speaker-item .title h5 {
     align-items: center;
     display: flex;
+    font-size: 14px;
 }
 /*** SPeakers page css end **/
 
@@ -3405,6 +3424,11 @@ border-radius: 25px;
 		width: -moz-calc(50% - 30px);
 		width: calc(50% - 30px)
 	}
+	.home-banner-new .desktop-banner .bottom-logo .event-boxes {
+		width: calc(33.33% - 20px * 2);
+		max-width: 365px;
+		margin: 20px;
+	}
 }
 .sponsors-and-exibitors-wrapper .db-items-wrapper .item .btn {
 	-webkit-border-radius:100%;
@@ -3412,7 +3436,7 @@ border-radius: 25px;
 	border-radius:100%;
 	width:35px;
 	height:35px;
-	background-color:#fcd72a;
+	background-color:#679af4;
 	position:absolute;
 	bottom:30px;
 	right:-17px;
@@ -3870,8 +3894,26 @@ border-radius: 25px;
 /* End Sidebar */
 
 /* Start Agenda */
-
-.startatagendatime h4{
+.dailyWrapper h4#starts-at {
+    position: relative;
+    padding-bottom: 14px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    max-width: 100px;
+    text-align: center;
+}
+.dailyWrapper h4#starts-at::after {
+    content: '\f063';
+    font-family: 'Font Awesome 5 Free';
+    position: absolute;
+    left: 45%;
+    bottom: -14px;
+    font-size: 20px;
+    font-weight: 300;
+    color: #5882f2;
+}
+.startatagendatime h4#starts-at{
     position:relative;
     padding-bottom:14px
 }
@@ -3914,6 +3956,9 @@ ul.agenda-submenu li a span{
     display:none;
     font-size:15px
 }
+ul.agenda-submenu li.active a span {
+    color:#5882f2 !important;
+}
 ul.agenda-submenu li a.active,
 ul.agenda-submenu li.active a,
 ul.agendamenu ul li a:hover{
@@ -3922,7 +3967,7 @@ ul.agendamenu ul li a:hover{
     -moz-box-shadow:0 1px 20px 2px #d8d8d8;
     box-shadow:0 1px 20px 2px #d8d8d8;
     border:1px solid transparent;
-    background:unset
+    background:#fff;
 }
 ul.agenda-submenu li a.active span,
 ul.agenda-submenu li.active a span{
@@ -3931,7 +3976,7 @@ ul.agenda-submenu li.active a span{
 }
 ul.agenda-submenu li a.active span span,
 ul.agenda-submenu li.active a span span{	
-    color:#ed1a3b
+    color:#5882f2;
 }
 ul.agenda-submenu li a{
     border:1px solid #d8d8d8;
@@ -3970,7 +4015,7 @@ ul.agenda-submenu li a::after{
     border:0;
     border-left:10px solid transparent;
     border-right:10px solid transparent;
-    border-top:10px solid #ed1a3b;
+    border-top:10px solid #5882f2;
     -webkit-transition:color .4s;
     -o-transition:color .4s;
     -moz-transition:color .4s;
@@ -3999,7 +4044,7 @@ ul.agenda-submenu li a::after{
 	content: '';
 	position: absolute;
 	left: 48%;
-	top: 6px;
+	top: 10px;
 	height: 100%;
 	width: 0px;
 	border-left: 4px dotted #c4c4c4;
@@ -4032,13 +4077,13 @@ ul.agenda-submenu li a::after{
 }
 
 .agendaitemrightinner a {
-	color: #ed1a3b;
+	color: #5882f2;
 	text-decoration: underline
 }
 
 .agendaitemrightinner>h4 {
 	margin: 10px 0;
-	color: #ed1a3b;
+	color: #5882f2;
 	font-size: 22px;
 	line-height: 22px;
 	font-family: "Montserrat";
@@ -4076,8 +4121,8 @@ ul.agenda-submenu li a::after{
 .agenditemlink a {
 	font-size: 16px;
 	font-weight: 600;
-	color: #ed1a3b;
-	border: 1px solid #ed1a3b;
+	color: #5882f2;
+	border: 1px solid #5882f2;
 	border-radius: 4px;
 	padding: 15px 40px;
 	transition: all .4s linear;
@@ -4090,7 +4135,7 @@ ul.agenda-submenu li a::after{
 }
 
 .agenditemlink a:hover {
-	background: #ed1a3b;
+	background: #5882f2;
 	color: #fff
 }
 
@@ -4119,7 +4164,7 @@ ul.agenda-submenu li a::after{
     content:'';
     position:absolute;
     left:48%;
-    top:6px;
+    top:10px;
     height:100%;
     width:0px;
     border-left:4px dotted #c4c4c4;
@@ -4148,12 +4193,12 @@ ul.agenda-submenu li a::after{
     z-index:2
 }
 .agendaitemrightinner a{
-    color:#ed1a3b;
+    color:#5882f2;
     text-decoration:underline
 }
 .agendaitemrightinner>h4{
     margin:10px 0;
-    color:#ed1a3b;
+    color:#5882f2;
     font-size:22px;
     line-height:22px;
     font-family:"Montserrat";
@@ -4187,8 +4232,8 @@ ul.agenda-submenu li a::after{
 .agenditemlink a{
     font-size:16px;
     font-weight:600;
-    color:#ed1a3b;
-    border:1px solid #ed1a3b;
+    color:#5882f2;
+    border:1px solid #5882f2;
     border-radius:4px;
     padding:15px 40px;
     transition:all .4s linear;
@@ -4200,7 +4245,7 @@ ul.agenda-submenu li a::after{
     font-family:"Montserrat"
 }
 .agenditemlink a:hover{
-    background:#ed1a3b;
+    background:#5882f2;
     color:#fff
 }
 .agenditemlink a:last-child{
@@ -4218,8 +4263,8 @@ ul.agenda-submenu li a::after{
 }
 .roomtitle{
     margin:10px 0;
-    color:#ed1a3b;
-    font-size:22px;
+    color:#5882f2;
+    font-size:16px;
     line-height:22px;
     font-family:"Montserrat";
     font-weight:600;
@@ -4228,7 +4273,7 @@ ul.agenda-submenu li a::after{
     display:flex
 }
 .roomtitle span{
-    color:#ed1a3b;
+    color:#5882f2;
     font-size:16px;
     font-family:"Montserrat";
     font-weight:600
@@ -4236,7 +4281,7 @@ ul.agenda-submenu li a::after{
 .roomtitle:after{
     content:'';
     height:1px;
-    background-color:#fbd640;
+    background-color:#cfceca;
     flex-grow:1;
     align-self:end;
     margin-bottom:5px;
@@ -4292,7 +4337,7 @@ ul.agenda-submenu li a::after{
     color:#b5b7b8
 }
 .single-conf .conf-name.expanded,.single-conf .conf-name:hover{
-    background-color:#ed1a3b;
+    background-color:#5882f2;
     color:#fff
 }
 .single-conf .conf-name:hover:after,.single-conf .conf-name.expanded:after{
@@ -4354,7 +4399,7 @@ ul.agenda-submenu li a::after{
     font-weight:600;
     margin:0px;
     font-size:12px;
-    color:#ed1a3b;
+    color:#5882f2;
     padding:6px 0;
     letter-spacing:.01em
 }
@@ -4482,7 +4527,7 @@ ul.agenda-submenu li a::after{
 .speaker-wrapper .person .persondetail h4{
     margin:0px;
     font-size:12px;
-    color:#ed1a3b;
+    color:#5882f2;
     padding:6px 0;
     font-family:'Montserrat';
     font-weight:600
@@ -4503,6 +4548,261 @@ ul.agenda-submenu li a::after{
 }
 
 /* End Agenda */
+
+/* Past winner section start */
+.past-winner {
+    position: relative;
+    z-index: 1;
+    padding-bottom: 50px;
+}
+.past-winner:before {
+    position: absolute;
+    content: '';
+    bottom: -4%;
+    left: 0;
+    background-image: url(https://www.sigma.world/hubfs/6M%20Sigma%20Files/Gaming%20Awards%20%28Europe%29/A-Element-left-side-bottom.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
+    height: 850px;
+    width: 480px;
+}
+.wrapper {
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 5px 25px rgba(0, 0, 50, 0.1);
+    box-shadow: 0 5px 25px rgba(0, 0, 50, 0.1);
+}
+.toggle {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 0px 10px 0px;
+}
+.toggle h3,
+.all-sell i.icon {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 26px;
+}
+.toggle h3 {
+    letter-spacing: 1px;
+}
+.all-sell i {
+    font-size: 18px;
+}
+.content {
+    position: relative;
+    font-size: 14px;
+    text-align: justify;
+    line-height: 30px;
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+.all-winners {
+    padding: 20px;
+    max-height: 1000px;
+    overflow: auto;
+    -webkit-transition: max-height 1s ease-in-out;
+    -o-transition: max-height 1s ease-in-out;
+    -moz-transition: max-height 1s ease-in-out;
+    transition: max-height 1s ease-in-out;
+    display: flex;
+    flex-wrap: wrap;
+}
+.single-winner {
+    text-align: center;
+    width: 25%;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid lightgray;
+}
+.single-winner h3 {
+    color: #295487;
+    border-bottom: 2px solid #19548c;
+    padding-bottom: 15px;
+    min-height: 50px;
+    margin: 10px auto 5px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.single-winner .winner-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
+/* Past winner section end */
+
+/* award section start */
+.awards {
+    position: relative;
+    overflow: hidden;
+    z-index: 1 ;
+    margin-bottom: 80px;
+}
+.awards:after {
+    position: absolute;
+    content: '';
+    bottom: -2%;
+    right: -2%;
+    background-image: url(https://sigma.world/wp-content/uploads/2021/06/A-Element-right-side.png);
+    background-repeat: no-repeat    ;
+    background-size: contain;
+    z-index: -1;
+    height: 700px;
+    width: 410px;
+}
+.page-btn,
+.our-btn {
+    text-align: center;
+    margin: 12px 0;
+}
+.page-btn a,
+.our-btn a {
+    display: block;
+    width: 100%;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 14px 0;
+    max-width: 240px;
+    margin: auto;
+    border-radius: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.award-box .discription {
+    display: none;
+    width: 68%;
+}
+.award-box.open .discription {
+    display: block;
+}
+.award-box.open {
+    width: 100%;
+}
+.awards-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: calc(100% + 20px);
+    margin-left: -10px;
+}
+.award-box {
+    margin: 10px;
+    width: -webkit-calc(33.33% - 20px);
+    width: -moz-calc(33.33% - 20px);
+    width: calc(33.33% - 20px);
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    border: 1px solid #c4c4c4;
+    border-radius: 30px;
+    padding: 14px 8px;
+}
+.award-box .box {
+    width: 100%;
+}
+.award-box.open .box {
+    width: calc(32% - 10px);
+}
+.awards-wrapper .award-box .box {
+    background: #fff;
+    overflow: hidden;
+    cursor: pointer;
+    height: 100%;
+    padding-bottom: 50px;
+    border-radius: 30px;
+}
+.award-box .box .top {
+    text-align: center;
+    min-height: 76px;
+}
+.award-box .top img {
+    max-width: 80px;
+}
+.award-box .box .top h5 {
+    color: #295487;
+    margin: 10px 0;
+    font-weight: 600;
+    font-size: 13px;
+}
+.award-box .sponsored p {
+    font-size: 12px;
+    margin-bottom: 10px;
+    color: darkgray;
+}
+.award-box .top .sponsored img {
+    max-width: 140px;
+}
+.award-box .bottom {
+    background: #afafaf;
+    background-size: 100%;
+    padding: 0 16px;
+    height: 40px;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 0 0 30px 30px;
+}
+.award-box .bottom:hover,
+.award-box.open .bottom:hover {
+    background: #772d8e;
+    background-repeat: no-repeat;
+    background-size: 200% 100%;
+    transition: background-size 1s;
+}
+.award-box .bottom::after {
+    content: '\f101';
+    color: #fff;
+    font-family: 'Font Awesome 5 Free';
+    color: #fff;
+    position: absolute;
+    right: 18px;
+    font-weight: 600;
+    top: 5px;
+    font-size: 18px;
+}
+.award-box .bottom span.less,
+.award-box.open .bottom span.more {
+    display: none;
+}
+.award-box.open .bottom span.less,
+.award-box .bottom span.more {
+    display: flex;
+}
+.award-box .bottom span {
+    font-size: 12px;
+    width: 100%;
+    font-weight: 600;
+    color: #fff;
+    height: 100%;
+    align-items: center;
+}
+.award-box .discription p,
+.person-right p,
+.right p {
+    font-size: 14px;
+    color: #000;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+/* award section end */
 
 
 /***********************/
@@ -4634,6 +4934,10 @@ ul.agenda-submenu li a::after{
 }
 
 @media(max-width:650px) {
+
+    .dailyWrapper h4#starts-at {
+        display: none;
+    }
 	.agendaitemright {
 		flex-basis: 88%;
 		margin-top: 2px
@@ -4856,6 +5160,17 @@ ul.agenda-submenu li a::after{
     .broker-testimonials img.closed {
         width: 6%;
     }
+	.single-exhibitor {
+		width: calc(33.33% - 13px * 2);
+		margin: 10px 10px;
+			margin-top: 10px;
+			margin-right: 10px;
+			margin-bottom: 10px;
+			margin-left: 10px;
+		text-align: center;
+		align-items: center;
+		display: flex;
+	}
 }
 @media(max-width:550px) {
 	.date-box .wrapper .col {
@@ -5311,14 +5626,14 @@ ul.agenda-submenu li a::after{
 }
 /* End iGathering Calendar */
 
-.page-template-exhibit .suppliers .supplier-single {
+.suppliers .supplier-single {
     border: 1px solid #c4c4c4;
 }
-.page-template-exhibit .suppliers .supplier-txt p, .page-template-exhibit .suppliers .every-single-supply p span {
+.suppliers .supplier-txt p, .page-template-exhibit .suppliers .every-single-supply p span {
     margin-top: 20px;
     color: #5e5e5e;
 }
-.page-template-exhibit .suppliers .every-single-supply .supply-txt {
+.suppliers .every-single-supply .supply-txt {
     display: inline-block;
     vertical-align: middle;
     font-weight: bold;
@@ -5326,34 +5641,34 @@ ul.agenda-submenu li a::after{
     font-size: 12px;
     font-family: "Montserrat";
 }
-.page-template-exhibit .suppliers .every-single-supply .supply-txt a {
+.suppliers .every-single-supply .supply-txt a {
     text-decoration: underline;
     -webkit-transition: all .3s linear;
     -o-transition: all .3s linear;
     -moz-transition: all .3s linear;
     transition: all .3s linear;
     display: inline-block;
-    color: #ed1a3b;
+    color: #772d8e;
     font-weight: inherit;
     margin: 0px 0 20px;
         margin-bottom: 20px;
 }
-.page-template-exhibit .suppliers .every-single-supply .supplier-single {
+.suppliers .every-single-supply .supplier-single {
     display: inline-block;
     vertical-align: middle;
 }
-.page-template-exhibit .single-logo-supply {
+.single-logo-supply {
     border-top: 1px solid #c9c9c9;
     padding-top: 30px;
     padding-bottom: 30px;
     margin-top: 30px;
 }
-.page-template-exhibit .single-logo-supply .every-single-supply .supply-txt p {
+.single-logo-supply .every-single-supply .supply-txt p {
     font-size: 12px;
     font-weight: 600;
 }
-.page-template-exhibit .single-logo-supply .every-single-supply .supply-txt p a {
-    color: #ed1a3b;
+.single-logo-supply .every-single-supply .supply-txt p a {
+    color: #772d8e;
     text-decoration: underline;
     margin-right: 10px;
 }
@@ -5986,8 +6301,15 @@ body {
         padding-bottom: 120px;
     }
     /* Header Language dropdown End */
+}
 
-
+.uae-pitch-gallery .elementor-image-gallery .gallery {
+	display: flex;
+	align-items: center;
+}
+.uae-pitch-gallery .elementor-image-gallery .gallery .gallery-icon  {
+	width: 150px;
+	margin: 0 auto;
 }
 
 /********* New Layout Css ********/
@@ -6171,3 +6493,1266 @@ body {
 	}
 }
 /********* New Layout Css end ********/
+
+/**** Home Page ***/
+.home-banner-new {
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: calc(100vh - 100px);
+    padding-bottom: 60px;
+}
+.home-banner-new .desktop-banner h1 {
+    font-size: 40px;
+    color: #fff;
+    margin: 60px 0 20px;
+}
+.home-banner-new .desktop-banner span {
+    font-size: 30px;
+    font-family: "Lato";
+    font-weight: bold;
+}
+.home-banner-new .desktop-banner span img {
+    width: 250px;
+	display: block;
+	margin: 0px auto;
+}
+.home-banner-new .desktop-banner .top-logo {
+    text-align:  center;
+}
+.home-banner-new .desktop-banner .top-logo p {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: "Lato";
+}
+.home-banner-new .desktop-banner .bottom-logo {
+    margin: 0px 0px;
+        margin-left: 0px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: -20px;
+    padding: 0px 0px;
+    width: -webkit-calc(100% + 20px * 2);
+    width: -moz-calc(100% + 20px * 2);
+    width: calc(100% + 20px * 2);
+}
+.home-banner-new .desktop-banner .bottom-logo .event-boxes .event-box .img img {
+    -o-object-fit: contain;
+    object-fit: contain;
+    height: 100%;
+    width: auto;
+    height: 100px;
+}
+.home-banner-new .desktop-banner .bottom-logo .event-boxes {
+    width: calc(25% - 25px * 2);
+    max-width: 365px;
+    margin: 20px;
+}
+.home-banner-new .desktop-banner .bottom-logo .event-box {
+    height: 100%;
+    margin: 0 auto;
+    color: #fff;
+}
+.home-banner-new .desktop-banner .bottom-logo .event-box a {
+    display: block;
+}
+.home-banner-new .desktop-banner .bottom-logo .event-box .img {
+    height: auto;
+    margin-bottom: 25px;
+}
+.desktop-banner .bottom-logo .event-box .img {
+    width: 100%;
+    height: 250px;
+    text-align: center;
+    margin-bottom: -15px;
+    position: relative;
+    z-index: 10;
+}
+.home-banner-new .desktop-banner .bottom-logo .event-box .content-wrapper {
+    width: 100%;
+    background-color: #772d8e;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    text-align: center;
+    color: #fff;
+    padding: 20px 26px 16px;
+    -webkit-transition: all .5s linear;
+    -o-transition: all .5s linear;
+    -moz-transition: all .5s linear;
+    transition: all .5s linear;
+}
+.home-banner-new .desktop-banner .bottom-logo .event-box .content-wrapper h6 {
+    font-size: 1.6rem;
+	margin-top: 0px;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #fff;
+	font-weight: bold;
+}
+.home-banner-new .desktop-banner {
+    display: block
+}
+
+@media (max-width: 768px) {
+    .home-banner-new .desktop-banner span img {
+        width: 200px;
+    }
+	.home-banner-new .desktop-banner .bottom-logo .event-box .img {
+		height: auto;
+		margin-bottom: 10px !important;
+	}
+}
+
+@media (max-width: 500px) {
+	.home-banner-new .desktop-banner .bottom-logo .event-boxes {
+        width: calc(100% - 30px * 2);
+		margin: 15px auto;
+    }
+	.all-speakers .single-speaker {
+		width: calc(100% - 20px * 2);
+		margin: 0 auto;
+	}
+}
+
+.past-magazine-blocks .sigma-news {
+	padding-top: 0;
+}
+.past-magazine-blocks .sigma-news .container {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+}
+.past-magazine-blocks .sigma-news .magazine-widget {
+	width: calc(25% - 20px * 2);
+	margin: 20px;
+}
+
+
+/**** Home Page ***/
+
+/*** Page Not Found ****/
+.not-found-page .page-content {
+	margin: 0 auto;
+}
+.not-found-page .page-content h3, .not-found-page .page-content h1 {
+	color: #ed1a3b
+}
+.not-found-page .page-content {
+    margin: 0 auto;
+    text-align: center;
+}
+.not-found-page .page-content p {
+    text-align: center;
+    color: #5e5e5e;
+    padding-bottom: 10em;
+}
+.not-found-page .page-content h3, .not-found-page .page-content h1 {
+    color: #5882f2;
+    font-family: "Montserrat";
+    font-weight: 600;
+}
+.not-found-page .page-content h3 {
+    font-size: 20px;
+}
+.not-found-page .page-content h1 {
+    font-size: 160px;
+}
+
+/* Tab section on Awards page */
+.tab-section .elementor-tabs-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: none;
+    border-radius: 18px 18px 0 0;
+}
+
+.tab-section .elementor-tabs-wrapper .elementor-tab-title {
+    text-align: center;
+    border: 2px solid #772d8e !important;
+    padding: 1.2rem .5rem;
+    border-radius: 40px;
+    background: #fff;
+    transition: background-color .4s;
+    width: 24%;
+    margin: 14px 0 0;
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #772d8e;
+}
+
+.tab-section .elementor-tabs-wrapper .elementor-tab-title:hover {
+    background: #772d8e;
+    color: #fff;
+}
+
+.tab-section .elementor-tabs-content-wrapper .elementor-tab-content {
+    border-radius: 30px;
+    padding: 20px;
+    box-shadow: 4px 4px 6px #b7b7b7;
+    margin-top: 15px;
+    color: #000;
+    font-size: 14px;
+    line-height: 20px;
+    background: #f2f2f2;
+}
+
+.tab-section .elementor-tabs-content-wrapper .elementor-tab-content ul {
+    list-style-type: disc;
+    padding-left: calc(2 * var(--global--spacing-horizontal));
+}
+
+.tab-section .elementor-tabs-content-wrapper .elementor-tab-content a {
+    color: #772d8e;
+}
+
+/* Last winners on Awards page */
+.wrapper.last-winners {
+    background: none;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+}
+
+.wrapper.last-winners .toggle {
+    background: #52459d;
+    border-radius: 5px;
+}
+
+/* Accordions on Sponsor/Exibit page */
+
+.sponsors-exibit .wrapper {
+    padding: 0.2em 0;
+    margin-bottom: 0.2em;
+    border-bottom: 0.5px solid;
+    background: none;
+    border-radius: unset;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.sponsors-exibit .toggle, .sponsors-exibit .toggle-link {
+background-color: transparent;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-align: center;
+-ms-flex-align: center;
+align-items: center;
+-webkit-box-pack: justify;
+-ms-flex-pack: justify;
+justify-content: space-between;
+border: none;
+outline: none;
+cursor: pointer;
+padding: 5px 0;
+}
+
+.sponsors-exibit .toggle h3, .sponsors-exibit .all-sell i.icon {
+font-size: 20px;
+color: #5882f2;
+font-weight: 600;
+text-transform: uppercase;
+line-height: 26px;
+}
+
+/* Banner section start */
+.custom-exhibit-banner {
+    min-height: 125px;
+    padding: 20px 0;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.custom-exhibit-banner {
+    background: -webkit-linear-gradient(65deg,#52459d 0%,#52459d 53%,#6b6b6b 48%,#6b6b6b 100%) !important;
+    background: -moz-linear-gradient(65deg,#52459d 0%,#52459d 53%,#6b6b6b 48%,#6b6b6b 100%) !important;
+    background: -o-linear-gradient(65deg,#52459d 0%,#52459d 53%,#6b6b6b 48%,#6b6b6b 100%) !important;
+    background: linear-gradient(65deg,#52459d 0%,#52459d 53%,#6b6b6b 48%,#6b6b6b 100%) !important;
+}
+
+.custom-exhibit-banner:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: 46%;
+    top: 0;
+    width: 100px;
+    height: 200%;
+    -webkit-transform: rotate(-25deg);
+    -moz-transform: rotate(-25deg);
+    -ms-transform: rotate(-25deg);
+    -o-transform: rotate(-25deg);
+    transform: rotate(-25deg);
+}
+
+.custom-exhibit-banner .banner-txts {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.custom-exhibit-banner .banner-title {
+    display: flex;
+}
+
+.custom-exhibit-banner .banner-title,
+.custom-exhibit-banner .banner-contact {
+    width: calc(50% - 20px * 2);
+    margin: 20px;
+}
+
+.custom-exhibit-banner .banner-title img {
+    display: inline-flex;
+    padding-right: 20px;
+}
+
+.custom-exhibit-banner .banner-title h2 {
+    font-size: 18px;
+    color: #fff;
+    line-height: 25px;
+    font-weight: 600;
+}
+
+.custom-exhibit-banner .banner-title p {
+    font-size: 12px;
+    line-height: 17px;
+    color: #fff;
+    padding-top: 10px;
+}
+
+.custom-exhibit-banner .banner-contact p,
+.custom-exhibit-banner .banner-contact p a {
+    max-width: 285px;
+    margin: 0 auto;
+    font-size: 12px;
+    color: #fff;
+}
+.custom-exhibit-banner .banner-contact p a:hover {
+    text-decoration: underline;
+}
+/* Banner section css end */
+
+
+/**** Floor Plan Page ****/
+
+.floor-plan-tabs .fp_btn:after {
+    font-family: 'Font Awesome 5 Free';
+    position: absolute;
+    right: 45%;
+    bottom: -24px;
+    font-size: 38px;
+    line-height: 40px;
+    z-index: 1;
+}
+.floor-plan-tabs .fp_btn a {
+	color: #ffffff;
+}
+.floor-plan-tabs .europe_btn.active:after {
+	content: '\f0d7';
+    color: #396BB0;
+}
+.floor-plan-tabs .uae_btn.active:after {
+	content: '\f0d7';
+    color: #585CA3;
+}
+.floor-plan-tabs .africa_btn.active:after  {
+	content: '\f0d7';
+    color: #da8e3a;
+}
+.floor-plan-tabs .americas_btn.active:after  {
+	content: '\f0d7';
+    color: #309b53;
+}
+.floor-plan-tabs .fp_btn.active .elementor-image-box-img img {
+	margin-top: 0;
+}
+.floor-plan-tabs .fp_btn .elementor-image-box-img img {
+	width: 50px !important;
+	height: 50px !important;
+	margin-top: -64px;
+	margin-bottom: 0;
+	object-fit: contain;
+	border: 2px solid #fff;
+	border-radius: 100%;
+}
+.sponsor-image-box .elementor-image-box-wrapper {
+	min-height: 150px;
+}
+.sponsor-image-box {
+	margin-right: 30px;
+}
+#gallery-page-tab .elementor-tabs-content-wrapper, #gallery-page-tab .elementor-tab-content, #gallery-page-tab .elementor-tab-content .container {
+	border: none;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+
+/**** Floor Plan Page ****/
+
+/********** About Page end ****/
+.single-exhibitor {
+    width: calc(20% - 20px * 2);
+    margin: 35px 20px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+}
+.supported-logo .supported-single {
+    width: calc(25% - 20px * 2);
+    margin: 20px;
+    border: 1px solid #c4c4c4;
+    padding: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    text-align: center;
+}
+.supported-logo .supported-single img {
+    margin: 0px auto;
+    height: 50px !important;
+    width: auto;
+}
+/********** About Page end ****/
+
+/*** Pagination  **/
+.blog-details {
+	background-color: #f4f4f4;
+}
+.aibc-pagination {
+	display: inline-block;
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+}
+.aibc-pagination .pagination {
+	display: inline-block;
+}
+.aibc-pagination .nav-links .page-numbers.current, .aibc-pagination a.prev.page-numbers, .aibc-pagination a.next.page-numbers {
+    line-height: 30px;
+    padding: 0px 15px;
+	height: 30px;
+    text-align: center;
+    width: auto;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    background-color: #ee4438;
+    color: #f4f4f4 !important;
+	text-decoration: none;
+}
+.aibc-pagination a.prev.page-numbers, .aibc-pagination a.next.page-numbers {
+	font-size: 14px !important;
+}
+.aibc-pagination .navigation.pagination .nav-links a:hover {
+    color: #ee4438;
+    opacity: 1;
+}
+.aibc-pagination .navigation.pagination .nav-links a {
+    display: block;
+    padding: 0px 8px;
+    text-align: center;
+    line-height: normal;
+    font-size: 16px;
+    margin: 0px 10px;
+	height: 30px;
+    font-weight: 600;
+    color: #7a7b7b;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    line-height: 30px;
+    text-decoration: none !important;
+    font-size: 18px;
+    font-weight: 600;
+}
+.aibc-pagination .navigation .nav-links > * {
+    min-width: 20px;
+	margin-top: 0;
+    min-height: 20px;
+}
+
+/*** Plan your Trip ***/
+.hotel-reviews {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -20px;
+}
+.single-hotel {
+    width: calc(25% - 20px * 2);
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 1px solid #c4c4c4;
+    padding: 25px 20px;
+    border-radius: 15px;
+}
+.hotel-reviews .short {
+    text-align: center;
+    min-width: 185px;
+    margin: 0 auto;
+    max-width: 185px;
+}
+.hotel-reviews .short .logo {
+    width: 80%;
+    margin: 0 auto;
+	min-height: 70px;
+}
+.hotel-reviews .short .logo img {
+    max-width: 98px;
+    max-height: 70px;
+}
+.hotel-reviews .short .rate {
+    margin: 15px auto;
+}
+.aibc-hotels .rate .star-rating {
+    display: block;
+}
+.aibc-hotels .star-rating {
+    display: none;
+}
+.hotel-reviews button, .hotel-reviews a.more {
+    appearance: none;
+    border: 0;
+    background-color: #772d8e !important;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 50px;
+    padding: 12px 0;
+    font-size: 16px;
+    color: #fff !important;
+    width: 100%;
+    max-width: 175px;
+    -webkit-transition: all .5s linear;
+    -o-transition: all .5s linear;
+    -moz-transition: all .5s linear;
+    transition: all .5s linear;
+    cursor: pointer;
+	display: inline-block;
+}
+.hotel-reviews .long {
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+    overflow: hidden;
+    position: relative;
+    -webkit-transition: .3s opacity ease;
+    -o-transition: .3s opacity ease;
+    -moz-transition: .3s opacity ease;
+    transition: .3s opacity ease;
+}
+.hotel-reviews .long .close {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    right: 14px;
+    top: 12px;
+    cursor: pointer;
+    background-color: #b7b7b7;
+    border-radius: 50%;
+    opacity: 1;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hotel-reviews .long .close::before {
+    font-family: "slick";
+    font-size: 30px;
+    line-height: 1;
+    color: #fff;
+    content: '×';
+    line-height: 28px;
+}
+.single-hotel.full {
+    width: 100%;
+}
+.hotel-detail h3 {
+    color: #ed1a3b;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+.book-txt p, .hotels-sub p, .hotel-detail p {
+    margin-bottom: 20px;
+    line-height: 19px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #5e5e5e;
+}
+.img-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+.img-gallery > a {
+    width: calc(32.33% - 15px);
+    margin-right: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.img-gallery a img {
+	height: 100%;
+}
+.hotel-reviews .long .buttons-wrapper {
+    text-align: right;
+}
+.single-hotel.full .show-more {
+    display: none;
+}
+.hotel-reviews .long.open {
+    width: calc(100% - 205px);
+    height: auto;
+    overflow: visible;
+    opacity: 1;
+}
+
+/*** Plan your Trip end ***/
+
+
+/**** Book Flights Start */
+textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], select {
+    padding: 6px;
+    display: inline-block;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.airline_dropdown_row select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background: white;
+    border: 1px solid #fff;
+    box-shadow: unset;
+    font-family: 'Montserrat';
+    font-weight: 400;
+}
+.airline-wrapper{
+	width: 100%;
+	text-align: center;
+}
+.airline_reg_form_row {
+    padding: 20px;
+    background: rgba(0,0,0,.65);
+    color: #fff;
+    border-radius: 20px;
+    max-width: 530px;
+    margin: 20px auto;
+}
+.airline_form_field_row {
+    width: 100%;
+    float: left;
+}
+.airline_title_row_left {
+    float: left;
+    width: 50%;
+}
+.airline_title_row_right {
+    float: right;
+    width: 50%;
+}
+.airline_dropdown_row {
+    width: 100%;
+    float: left;
+    margin-top: 15px;
+}
+.airline_radiobtns_row {
+    padding: 20px 0;
+    display: inline-block;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 14px;
+}
+.airline_radiobtns_row_left, .airline_radiobtns_row_right {
+    width: 50%;
+    float: left;
+}
+
+.airline_radiobtns_row_right {
+    display: inline-block;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 14px;
+}
+.user_way_option {
+    float: left;
+    padding-right: 20px;
+}
+.user_way_option [type="radio"]:checked, [type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+.user_way_option [type="radio"]:checked+label, .user_way_option [type="radio"]:not(:checked)+label {
+    position: relative;
+    padding-left: 24px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #fff;
+}
+.user_way_option [type="radio"]:checked+label:before, .user_way_option [type="radio"]:not(:checked)+label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    background: #fff;
+}
+.user_way_option [type="radio"]:checked+label:after, .user_way_option [type="radio"]:not(:checked)+label:after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: #772d8e;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border-radius: 100%;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+}
+.user_way_option [type="radio"]:checked+label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.user_way_option [type="radio"]:not(:checked)+label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+.airline_datepicker_left, .airline_datepicker_right {
+    width: 50%;
+    float: left;
+}
+.take_off_datepicker {
+    padding-right: 10px;
+}
+.return_datepicker {
+    padding-left: 10px;
+}
+
+/** Datepicker **/
+.ui-datepicker[style] { z-index: 999999 !important }
+
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next {
+	position: absolute;
+	top: 2px;
+	width: 1.8em;
+	height: 1.8em
+}
+
+.ui-datepicker .ui-datepicker-prev span,
+.ui-datepicker .ui-datepicker-next span {
+	display: block;
+	position: absolute;
+	left: 50%;
+	margin-left: -8px;
+	top: 50%;
+	margin-top: -8px
+}
+
+.ui-widget-header .ui-icon {
+	background-image: url('https://www.sigma.world/fileadmin/cssimg/ui-icons-fff.png');
+}
+
+.ui-icon {
+	display: block;
+	text-indent: -99999px;
+	overflow: hidden;
+	background-repeat: no-repeat
+}
+
+.ui-icon {
+	width: 16px;
+	height: 16px
+}
+
+.ui-icon-circle-triangle-w {
+	background-position: -80px -192px
+}
+
+.ui-widget-header a {
+	color: #fff
+}
+
+.ui-datepicker .ui-datepicker-next {
+	right: 2px
+}
+
+.ui-icon-circle-triangle-e {
+	background-position: -48px -192px
+}
+
+.ui-datepicker .ui-datepicker-title {
+	margin: 0 2.3em;
+	line-height: 1.8em;
+	text-align: center
+}
+
+#ui-datepicker-div {
+	box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+	margin-left: 20px;
+	border-radius: 0 0 5px 5px
+}
+
+.ui-datepicker table {
+	width: 100%;
+	font-size: .9em;
+	border-collapse: collapse;
+	margin: 0 0 .4em;
+	background: #fff;
+	padding: 0 5px
+}
+
+.ui-datepicker th {
+	padding: .7em .3em;
+	text-align: center;
+	font-weight: bold;
+	border: 0 !important;
+	text-transform: capitalize
+}
+
+.ui-datepicker td {
+	border: 0 !important;
+	padding: 1px;
+	height: 24px;
+	width: 24px
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+	border: 1px solid #ed1a3b;
+	font-weight: bold;
+	color: #ed1a3b
+}
+
+.ui-datepicker-today a {
+	background: #ed1a3b;
+	color: #fff !important;
+	border-color: #ed1a3b !important
+}
+
+.ui-datepicker td span,
+.ui-datepicker td a {
+	display: block;
+	padding: .2em;
+	text-align: right;
+	text-decoration: none
+}
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active {
+	border: 1px solid #6fd13b;
+	background: #6fd13b;
+	font-weight: bold;
+	color: #fff
+}
+
+.ui-datepicker-calendar .ui-state-hover,
+.ui-datepicker-calendar .ui-widget-content .ui-state-hover,
+.ui-datepicker-calendar .ui-widget-header .ui-state-hover,
+.ui-datepicker-calendar .ui-state-focus,
+.ui-datepicker-calendar .ui-widget-content .ui-state-focus,
+.ui-datepicker-calendar .ui-widget-header .ui-state-focus {
+	border: 1px solid #6fd13b;
+	background: #6fd13b;
+	font-weight: bold;
+	color: #fff
+}
+
+.take_off_datepicker input, .return_datepicker input {
+    width: 95%;
+    padding: 6px !important;
+    border: 0 !important;
+    font-size: 14px;
+    line-height: 20px !important;
+    border-radius: 5px !important;
+    float: left;
+    background-image: url('https://www.sigma.world/fileadmin/cssimg/calendarIcon.png');
+    background-repeat: no-repeat;
+    background-size: 14px 14px;
+    background-position: top 8px right 6px;
+}
+.airline_flexible_check {
+    padding: 10px 0;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    text-align: left;
+    font-size: 14px;
+    line-height: 16px;
+}
+.airline_flexible_check [type=checkbox]:checked, .airline_flexible_check [type=checkbox]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+.airline_flexible_check [type=checkbox]:checked+label, .airline_flexible_check [type=checkbox]:not(:checked)+label {
+    position: relative;
+    padding-left: 24px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+}
+.airline_flexible_check [type=checkbox]:checked+label:before, .airline_flexible_check [type=checkbox]:not(:checked)+label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #aeaeae;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 3px rgb(0 0 0 / 10%);
+    top: 0;
+}
+.airline_flexible_check [type="checkbox"]:checked + label::after, .airline_flexible_check [type="checkbox"]:not(:checked) + label::after {
+    content: "✔";
+    position: absolute;
+    top: 7px;
+    left: 3px;
+    font-size: 14px;
+    line-height: 0.3;
+    color: rgb(76, 175, 80);
+    font-family: Ionicons;
+    transition: all 0.2s ease 0s;
+}
+.airline_flexible_check [type=checkbox]:checked+label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.traveling_class {
+    float: right;
+    padding: 10px;
+}
+.traveling_class [type="radio"]:checked, .traveling_class [type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+.traveling_class [type="radio"]:checked+label, .traveling_class [type="radio"]:not(:checked)+label {
+    position: relative;
+    padding-left: 20px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #fff;
+}
+.traveling_class [type="radio"]:checked+label:before, .traveling_class [type="radio"]:not(:checked)+label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 1px;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    background: #fff;
+}
+.traveling_class [type="radio"]:checked+label:after, .traveling_class [type="radio"]:not(:checked)+label:after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: #772d8e;
+    position: absolute;
+    top: 5px;
+    left: 4px;
+    border-radius: 100%;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+}
+.traveling_class [type="radio"]:checked+label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.traveling_class [type="radio"]:not(:checked)+label:after {	
+    opacity: 0;	
+    -webkit-transform: scale(0);	
+    transform: scale(0);	
+}	
+
+.airline_person_selection {
+    width: 33%;
+    float: left;
+    padding-bottom: 10px;
+}
+.person_age_select {
+    padding-right: 14px;
+}
+.airline_person_selection input {
+    border: 0;
+    width: 94%;
+    border-radius: 2px;
+    padding: 5px;
+    font-size: 12px;
+    line-height: 16px;
+}
+.airline_reg_action_btns {
+    padding: 12px 0;
+    display: inline-block;
+    width: 100%;
+}
+.airline_form_action_btn input[type="submit"] {
+    background-color: #772d8e;
+    color: #fff !important;
+    font-size: 16px !important;
+    padding: 12px 20px !important;
+    border-radius: 50px !important;
+    font-family: 'Montserrat';
+    font-weight: 400 !important;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer!important;
+    display: block;
+    border: 0 !important;
+    width: 30%;
+    margin: auto;
+    box-shadow: 0 1px 1px #000;
+}
+/* Book Flights End */
+.sponsors-and-exibitors-wrapper .db-items-wrapper .item {
+    justify-content: center;
+}
+.ehf-header #masthead .custom-header .header-cmenu li a:hover, .ehf-header #masthead .custom-header .header-cmenu li ul.sub-menu li a.hfe-sub-menu-item:hover, .mobile-languages .wpml-ls-legacy-dropdown a:hover, .mobile-languages.elementor-widget-wpml-language-switcher .wpml-elementor-ls .wpml-ls-legacy-dropdown a:hover, .mobile-languages .wpml-ls-legacy-dropdown a:focus, .mobile-languages.elementor-widget-wpml-language-switcher .wpml-elementor-ls .wpml-ls-legacy-dropdown a:focus, .mobile-languages .wpml-ls-legacy-dropdown a:active, .mobile-languages.elementor-widget-wpml-language-switcher .wpml-elementor-ls .wpml-ls-legacy-dropdown a:active {
+    color: var(--aibc);
+}
+
+.news-menu > ul li a:hover,.post-item h2:hover, .post-item a:hover h2, .post-item h2:focus, .post-item a:focus h2 {
+    color: var(--aibc);
+}
+a:focus {
+    background: contain !important;
+    color: contain !important;
+}
+.testimonial-slide-home .slick-prev::before,.mobile-pick .btn span, .testimonial-slide-home .slick-arrow.slick-next::before,.spotify .post-item:first-child .top .play-btn,.spotify .top .play-btn{
+    background-color: var(--aibc);
+}
+.mobile-pick{
+    border-color: var(--aibc);
+}
+div.wpforms-container-full .wpforms-form .wpforms-field {
+    padding: 0;
+}
+#wpforms-form-121383 {
+    position: relative;
+    padding: 10px 0;
+    display: flex;
+}
+#wpforms-form-121383 .wpforms-submit-container {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    margin: 0;
+}
+
+
+/*CUSTOM RESPONSIVE*/
+@media (max-width: 990px){
+    .single-hotel {
+    width: calc(33.33% - 15px * 2);
+    margin: 15px;
+}
+.hotel-reviews {
+    padding-inline: 15px;
+}
+}
+
+
+@media (max-width : 768px){
+    .sponsor-image-box {
+        padding-inline: 15px;
+        margin-right: 0;
+    }
+    .single-hotel {
+    width: calc(50% - 10px * 2);
+    margin: 10px;
+}
+#gallery-page-tab .elementor-tab-title.elementor-tab-mobile-title {
+    display: none;
+}
+.tab-section .elementor-tab-title.elementor-tab-mobile-title {
+    display: none;
+}
+.tab-section #elementor-tab-title-1031,.tab-section .elementor-tab-desktop-title, .tab-section #elementor-tab-title-1032, .tab-section #elementor-tab-title-1031, .tab-section #elementor-tab-title-1033, .tab-section #elementor-tab-title-1031, .tab-section #elementor-tab-title-1034 {
+    width: calc(50% - 10px);
+    margin: 5px;
+    font-size: 12px;
+}
+.award-box {
+    margin: 5px;
+    width: calc(50% - 10px);
+}
+.award-box .box .top h5 {
+    font-size: 12px;
+}
+.award-box .top .sponsored img {
+    max-width: 140px;
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+}
+.award-box.open {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.award-box.open * {
+    width: 100% !important;
+}
+.awards-wrapper .award-box .box{
+    padding-bottom: 28px;
+}
+.award-box .discription p{
+    margin-bottom: 30px;
+}
+.charity-items {
+    padding-inline: 13px;
+}
+.single-winner {
+    width: calc(50% - 10px);
+    margin: 0 5px 5px;
+}
+.elementor-element-9eafece .elementor-column {
+    margin-bottom: 15px;
+}
+.elementor-element-9eafece .elementor-column a {
+    font-size: 16px !important;
+}
+
+#gallery-1 {
+  flex-wrap: wrap;
+}
+
+
+#gallery-1 .gallery-item {
+  width: 50%;
+}
+
+#gallery-1 .gallery-item img {
+  max-width: 95%;
+  margin: 0 auto;
+  height: 75px !important;
+  object-fit: contain;
+}
+.home-banner-new .desktop-banner .bottom-logo .event-boxes {
+    width: calc(50% - 25px * 2);
+}
+
+}
+
+.call-for-speakers .elementor-widget-container a {
+    color: #52459d;
+}
+
+.call-for-speakers .elementor-widget-container ul li:before {
+    background-color: #52459d;
+    content: '';
+    min-width: 7px;
+    height: 7px;
+    display: inline-block;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    margin-right: 0;
+    position: absolute;
+    left: 0;
+    top: 7px;
+}
+
+.call-for-speakers .elementor-widget-container ul li {
+    padding-left: 20px;
+    position: relative;
+}
+
+.speakers-top-section div .elementor-widget-container img {
+    width: 25% !important;
+}
+
+.speakers-form iframe form .hs_submit .hs-button {
+    background-color: #772d8e;
+    min-width: 210px;
+    padding: 13px 20px;
+    border-radius: 5px;
+    appearance: none;
+    font-family: "Montserrat";
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #fff;
+    outline: 0;
+    text-align: center;
+    cursor: pointer;
+    display: block;
+}
+
+@media (max-width: 620px){
+    .video-grid {
+        width: calc(50% - 10px * 2);
+        display: inline-block;
+        margin: 10px;
+    }
+    .sponsors-exibit .toggle h3, .sponsors-exibit .all-sell i.icon {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .sell span {
+        font-size: 12px; 
+    }
+    .single-hotel {
+    width: calc(100% - 10px * 2);}
+    .single-speaker img {
+    width: 110px;
+    height: 110px;
+    }
+    .sponsors-and-exibitors-wrapper .db-items-wrapper .item {
+        width: calc(50% - 20px);
+        margin: 10px;
+    }
+    .single-winner {
+        width: calc(100% - 10px);
+        margin: 0 5px 15px;
+    }
+}
+@media (max-width: 540px){
+.video-grid {
+    width: calc(100% - 10px * 2);
+   
+}
+.home-banner-new .desktop-banner .bottom-logo .event-boxes {
+    width: calc(100% - 25px * 2);
+}
+#wpforms-form-121383 .wpforms-submit-container{
+    right: 0;
+}
+}
+
+@media (max-width: 480px){
+
+}

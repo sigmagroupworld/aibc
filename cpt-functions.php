@@ -59,6 +59,8 @@ function aibc_taxonomies_news(){
 }
 
 // create a Custom post tags for news post
+// 
+/*
 add_action( 'init', 'aibc_tags_news', 0 );
 function aibc_tags_news(){
 	register_taxonomy('news-tag','news-items',
@@ -79,7 +81,7 @@ function aibc_tags_news(){
 			'query_var'     => true
 		)
 	);
-}
+}*/
 
 // Create CPT for authors
 add_action('init', 'aibc_author_custom_posts');
@@ -600,6 +602,7 @@ function aibc_taxonomies_gallery(){
 
 function aibc_disable_autoupdate_slug($post_ID, $post, $update)
 {
+	/*
     if ($post->post_type == 'news-items') {
         $disable_autoupdate = get_post_meta($post->ID, 'disable_autoupdate_slug', true);
 
@@ -616,4 +619,5 @@ function aibc_disable_autoupdate_slug($post_ID, $post, $update)
             }
         }
     }
+	*/
 }

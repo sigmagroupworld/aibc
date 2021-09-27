@@ -598,7 +598,7 @@ body {
     justify-content: space-between;
     font-size: 18px;
     font-weight: 600;
-    background-color: #e21735;
+    background-color: #772d8e;
     color: #fff;
     margin: 0 0 20px 0;
     width: 100%;
@@ -606,7 +606,7 @@ body {
 .h-title a:hover,
 .h-title a:focus,
 .h-title a:active {
-	background-color: #e21735 !important;
+	background-color: #772d8e !important;
     color: #fff !important;
     text-decoration: none !important;
 }
@@ -655,7 +655,7 @@ body {
 .post-item a:hover h2,
 .post-item h2:focus,
 .post-item a:focus h2 {
-    color: #ed1a3b;
+    color: #772d8e;
 }
 .post-item h2.big {
     font-size: 34px;
@@ -773,7 +773,7 @@ body {
     -moz-border-radius: 50%;
     border-radius: 50%;
     cursor: pointer;
-    background-color: #e21735;
+    background-color: #772d8e;
     position: relative;
     margin: 0 auto;
 }
@@ -801,7 +801,7 @@ body {
     -moz-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding: 20px 0 40px 0;
+    padding: 20px 0 0 0;
     position: relative;
 }
 .news-search {
@@ -1003,12 +1003,11 @@ body {
 .news-search .search-form .s-form .search-label i {
     font-size: 25px;
     line-height: 30px;
-    color: #ed1a3b;
+    color: #772d8e;
 }
 .news-search .search-form .search-field {
-    display: none;
     max-width: 245px;
-    width: 100%;
+    width: 245px;
     -webkit-transition-delay: 0s;
     -moz-transition-delay: 0s;
     -o-transition-delay: 0s;
@@ -1016,7 +1015,7 @@ body {
     cursor: text;
     background-color: #fff;
     border: none;
-    border-bottom: solid 1px #ed1a3b;
+    border-bottom: solid 1px #772d8e;
     margin: 0;
     outline: none !important;
     /*position: absolute;*/
@@ -1361,7 +1360,7 @@ body {
 }
 
 .article-wrapper-slider .post-item a .top span.tag {
-    background-color: #ed1a3b;
+    background-color: #772d8e;
     color: #fff;
     padding: 10px 25px;
     font-size: 14px;
@@ -1391,6 +1390,76 @@ body .slick-dots li {
 body .slick-dots li button {
     display: none !important;
 }
+
+.slick-slider .slick-dots li {
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+}
+
+.slick-slider .slick-dots li.slick-active:before {
+    opacity: 1;
+    background-color: #772d8e !important;
+}
+
+.slick-slider .slick-dots li:before {
+    content: '';
+    border: 0;
+    border: 1px solid #772d8e;
+    background-color: #fff;
+    opacity: 1;
+    width: 10px;
+    height: 10px;
+    -webkit-transition: .3s all;
+    -o-transition: .3s all;
+    -moz-transition: .3s all;
+    transition: .3s all;
+    display: block;
+    border-radius: 50%;
+}
+
+.contribute-box {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 10px 20px 10px;
+    margin-top: 20px;
+}
+
+.contribute-box h2 {
+    font-size: 23px;
+    font-weight: 600;
+    color: #020202;
+}
+
+.contribute-box p {
+    font-size: 14px;
+    font-weight: 400;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.contribute-box a {
+    display: inline-block;
+    color: #fff;
+    font-weight: 400;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 16px 30px;
+    line-height: 1.2;
+    text-decoration: none !important;
+    border: none;
+    -webkit-transition: 0.3s all;
+    -o-transition: 0.3s all;
+    -moz-transition: 0.3s all;
+    transition: 0.3s all;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    background: #6fd13b;
+}
+
 /* Media screen css start */
 @media (max-width: 1600px) {
     /* World Gaming Festival Image css start */

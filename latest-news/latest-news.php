@@ -8,7 +8,7 @@ $taxonomy = 'news-cat';
 $europe = '<section class="home-blog">
 	<div class="container">
 		<div class="home-news">';
-			$news_tags = aibc_get_news_tags_data(1884, $taxonomy, 12);
+			$news_tags = aibc_get_news_tags_data(6102, $taxonomy, 12);
 			$europe .= '<div class="latest-news hp-left">
 				<div class="h-title">
 					<a href="' . get_tag_link($news_tags['term_value']->term_id) . '">' . 
@@ -38,7 +38,7 @@ $europe = '<section class="home-blog">
 				}
 			$europe .= '</div>
 			<div class="affiliate hp-center">';
-				$news_tags = aibc_get_news_tags_data(1907, $taxonomy, 11);
+				$news_tags = aibc_get_news_tags_data(6107, $taxonomy, 11);
 				$europe .= '<div class="h-title">
 					<a href="' . get_tag_link($news_tags['term_value']->term_id) . '">' .
 						$news_tags['term_value']->name . '<i class="fa fa-angle-right" aria-hidden="true"></i>
@@ -174,14 +174,35 @@ $asia = '<section class="home-blog">
 					}
 				$asia .= '</div>
 			</div>
-			<div class="spotify hp-right">
-				<div class="h-title"><a href="#">'.
-						__('Publications', 'sigmaigaming') . '<i class="fa fa-angle-right" aria-hidden="true"></i>
-				</a></div>
-				<div class="blog-listing-module">';
-                    $asia .= do_shortcode('[aibc-magazines appearance=latest-news post_per_page=2 term_id=1149]');
-                    $asia .= do_shortcode('[aibc-magazines appearance=latest-news post_per_page=2 term_id=1148]');
-                    $asia .= '
+			<div class="spotify hp-right">';
+				$asia .= '<div class="h-title">
+					<a href="/magazine/" target="_blank">' .
+						$desktop_banner["publication_title"]['title'] . '<i class="fa fa-angle-right" aria-hidden="true"></i>
+					</a>
+				</div>
+				<div class="magazine-section">
+					<div class="sigma-magazines testimonial-slide-home">';
+						$sigma_magazines = aibc_get_magazines(1148);
+						foreach($sigma_magazines as $k => $item) {
+							$featured_image = wp_get_attachment_image_src( get_post_thumbnail_id( $item->ID ), 'full' );
+							$title = get_field('title', $item->ID);
+							$subtitle = get_field('subtitle', $item->ID);
+
+							$asia .= '<figure class="testimonial">';
+								if(!empty($featured_image)){
+									$europe .= '<img src="' . $featured_image[0] . '" alt="' . $item->post_title . '" />';
+								} else {
+                                    $europe .= '<img src="' . $placeholder_full . '" alt="' . $item->post_title . '" />';
+                                }
+                            $asia .= '<div class="titlewrap">
+					            			<h5>'.$title.'</h5>
+					            			<h6>'.$subtitle.'</h6>
+					          			</div>';
+							$asia .= '</figure>';
+						}
+					$asia .= '</div>
+				<div class="publication-image">
+					<img src="/wp-content/uploads/2021/09/post-magazine.webp">
 				</div>
 			</div>
 		</div>
